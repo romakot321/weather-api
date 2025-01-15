@@ -34,5 +34,7 @@ Install dependencies:
 - `pip install -e .`
 Run postgresql database:
 - `docker compose up -d postgres`
+Run migrations:
+- `python3 -c "__import__('app.db.base').db.base.run_init_models()"`
 Run tests:
 - `python3 -m pytest -v`
